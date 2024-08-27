@@ -12,9 +12,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Card
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextFieldDefaults
@@ -95,7 +97,11 @@ fun WeatherScreen(){
 
 @Composable
 fun weatherCard(label: String, value: String, icon: ImageVector){
+    Card(modifier = Modifier
+        .padding(8.dp)
+        .size(150.dp)) {
 
+    }
 }
 
 @Preview(showBackground = true)
