@@ -104,7 +104,7 @@ fun WeatherScreen(){
 }
 
 @Composable
-fun weatherCard(label: String, value: String, icon: ImageVector){
+fun WeatherCard(label: String, value: String, icon: ImageVector){
     Card(modifier = Modifier
         .padding(8.dp)
         .size(150.dp),
@@ -137,7 +137,8 @@ fun weatherCard(label: String, value: String, icon: ImageVector){
                     fontSize = 22.sp,
                     fontWeight = FontWeight.Bold,
                     textAlign = TextAlign.Center,
-                    color = BlueJc)
+                    color = BlueJc
+                )
             }
         }
     }
