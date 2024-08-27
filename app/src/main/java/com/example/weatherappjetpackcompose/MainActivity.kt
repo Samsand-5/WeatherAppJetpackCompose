@@ -80,6 +80,8 @@ fun WeatherScreen(){
                     focusedLabelColor = DarkBlueJc
                 )
             )
+            Spacer(modifier = Modifier.height(16.dp))
+
         }
     }
 }
