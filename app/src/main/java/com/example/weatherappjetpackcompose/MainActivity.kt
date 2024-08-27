@@ -125,6 +125,7 @@ fun weatherCard(label: String, value: String, icon: ImageVector){
                 Spacer(modifier = Modifier.width(4.dp))
                 Text(text = label, fontSize = 14.sp, color = DarkBlueJc)
             }
+            Spacer(modifier = Modifier.height(8.dp))
         }
     }
 }
