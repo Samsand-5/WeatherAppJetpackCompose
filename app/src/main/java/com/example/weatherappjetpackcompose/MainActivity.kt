@@ -99,6 +99,9 @@ fun WeatherScreen(){
                 Text(text = "Check Weather")
             }
             Spacer(modifier = Modifier.height(16.dp))
+            weatherData?.let {
+
+            }
         }
     }
 }
