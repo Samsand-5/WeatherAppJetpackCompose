@@ -28,6 +28,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.paint
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -90,6 +91,11 @@ fun WeatherScreen(){
             Spacer(modifier = Modifier.height(16.dp))
         }
     }
+}
+
+@Composable
+fun weatherCard(label: String, value: String, icon: ImageVector){
+
 }
 
 @Preview(showBackground = true)
