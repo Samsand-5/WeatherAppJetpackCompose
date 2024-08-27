@@ -83,9 +83,11 @@ fun WeatherScreen(){
             )
             Spacer(modifier = Modifier.height(16.dp))
             Button(onClick = {viewModel.fetchWeather(city,apiKey)},
-            colors = ButtonDefaults.buttonColors(BlueJc)) {
-
+            colors = ButtonDefaults.buttonColors(BlueJc)
+            ) {
+                Text(text = "Check Weather")
             }
+            Spacer(modifier = Modifier.height(16.dp))
         }
     }
 }
