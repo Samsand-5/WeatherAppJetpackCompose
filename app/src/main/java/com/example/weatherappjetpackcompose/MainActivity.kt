@@ -40,6 +40,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.weatherappjetpackcompose.ui.theme.BlueJc
 import com.example.weatherappjetpackcompose.ui.theme.DarkBlueJc
@@ -122,6 +123,7 @@ fun weatherCard(label: String, value: String, icon: ImageVector){
                     modifier = Modifier.size(20.dp)
                 )
                 Spacer(modifier = Modifier.width(4.dp))
+                Text(text = label, fontSize = 14.sp, color = DarkBlueJc)
             }
         }
     }
