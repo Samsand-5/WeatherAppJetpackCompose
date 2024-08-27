@@ -20,6 +20,7 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CardElevation
+import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextFieldDefaults
@@ -113,8 +114,10 @@ fun weatherCard(label: String, value: String, icon: ImageVector){
             verticalArrangement = Arrangement.Top
         ){
             Row(verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.Start) {
-
+                horizontalArrangement = Arrangement.Start
+            ) {
+                Icon(imageVector = icon, contentDescription =null,
+                    )
             }
         }
     }
