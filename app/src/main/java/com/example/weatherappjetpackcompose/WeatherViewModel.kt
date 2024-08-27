@@ -19,7 +19,7 @@ class WeatherViewModel:ViewModel() {
                 _weatherData.value = response
             }
             catch (e: Exception){
-
+                e.printStackTrace()
             }
         }
     }
