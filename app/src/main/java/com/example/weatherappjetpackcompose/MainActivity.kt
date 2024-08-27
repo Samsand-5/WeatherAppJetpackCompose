@@ -17,6 +17,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CardElevation
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextFieldDefaults
@@ -99,7 +101,10 @@ fun WeatherScreen(){
 fun weatherCard(label: String, value: String, icon: ImageVector){
     Card(modifier = Modifier
         .padding(8.dp)
-        .size(150.dp)) {
+        .size(150.dp),
+        colors = CardDefaults.cardColors(Color.White),
+        elevation = CardDefaults.cardElevation(4.dp)
+    ) {
 
     }
 }
