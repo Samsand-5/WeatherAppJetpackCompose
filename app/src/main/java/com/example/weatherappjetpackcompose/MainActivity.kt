@@ -31,5 +31,7 @@ fun WeatherScreen(){
 @Preview(showBackground = true)
 @Composable
 fun WeatherPreview(){
-
+    WeatherAppJetpackComposeTheme {
+        WeatherScreen()
+    }
 }
