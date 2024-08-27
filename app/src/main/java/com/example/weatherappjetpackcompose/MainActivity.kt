@@ -32,6 +32,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.weatherappjetpackcompose.ui.theme.BlueJc
+import com.example.weatherappjetpackcompose.ui.theme.DarkBlueJc
 import com.example.weatherappjetpackcompose.ui.theme.WeatherAppJetpackComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -73,6 +75,9 @@ fun WeatherScreen(){
                 colors = TextFieldDefaults.colors(
                     focusedContainerColor = Color.White,
                     unfocusedContainerColor = Color.White,
+                    focusedIndicatorColor = BlueJc,
+                    unfocusedLabelColor = BlueJc,
+                    focusedLabelColor = DarkBlueJc
                 )
             )
         }
