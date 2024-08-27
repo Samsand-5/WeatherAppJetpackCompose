@@ -131,7 +131,9 @@ fun weatherCard(label: String, value: String, icon: ImageVector){
                 .weight(1f),
                 contentAlignment = Alignment.Center
             ){
-                Text(text = value)
+                Text(text = value,
+                    fontSize = 22.sp,
+                    )
             }
         }
     }
