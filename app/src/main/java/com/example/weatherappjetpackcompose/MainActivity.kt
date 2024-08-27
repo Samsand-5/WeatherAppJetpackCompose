@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.OutlinedTextField
@@ -61,7 +62,11 @@ fun WeatherScreen(){
             verticalArrangement = Arrangement.Top
         ) {
             Spacer(modifier = Modifier.height(180.dp))
-            OutlinedTextField(value = city, onValueChange = {city = it})
+            OutlinedTextField(value = city,
+                onValueChange = {city = it},
+                label = { Text(text = "City")},
+                modifier = Modifier.fillMaxWidth(),
+                )
         }
     }
 }
