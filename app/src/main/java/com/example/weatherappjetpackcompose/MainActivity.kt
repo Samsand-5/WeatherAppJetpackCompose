@@ -110,7 +110,9 @@ fun weatherCard(label: String, value: String, icon: ImageVector){
             .padding(16.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Top
-        )
+        ){
+
+        }
     }
 }
 
