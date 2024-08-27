@@ -1,5 +1,8 @@
 package com.example.weatherappjetpackcompose
 
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.create
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -13,5 +16,13 @@ interface WeatherApi {
 
     companion object{
         private const val BASE_URL="https://api.openweathermap.org/data/2.5/"
+
+        fun create():WeatherApi{
+            val retrofit = Retrofit.Builder()
+                .addConverterFactory(GsonConverterFactory.create())
+                .baseUrl(BASE_URL)
+                .build()
+            return retrofit.create(WeatherApi::class.java)
+        }
     }
 }
