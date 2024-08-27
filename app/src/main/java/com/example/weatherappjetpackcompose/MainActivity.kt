@@ -105,7 +105,12 @@ fun weatherCard(label: String, value: String, icon: ImageVector){
         colors = CardDefaults.cardColors(Color.White),
         elevation = CardDefaults.cardElevation(4.dp)
     ) {
-
+        Column(modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Top
+        )
     }
 }
 
