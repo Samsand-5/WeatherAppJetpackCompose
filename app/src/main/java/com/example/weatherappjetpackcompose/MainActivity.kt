@@ -117,7 +117,10 @@ fun weatherCard(label: String, value: String, icon: ImageVector){
                 horizontalArrangement = Arrangement.Start
             ) {
                 Icon(imageVector = icon, contentDescription =null,
-                    )
+                    tint = DarkBlueJc,
+                    modifier = Modifier.size(20.dp)
+                )
+
             }
         }
     }
