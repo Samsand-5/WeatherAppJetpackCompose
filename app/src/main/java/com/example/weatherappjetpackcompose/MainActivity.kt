@@ -136,7 +136,8 @@ fun weatherCard(label: String, value: String, icon: ImageVector){
                 Text(text = value,
                     fontSize = 22.sp,
                     fontWeight = FontWeight.Bold,
-                    textAlign = TextAlign.Center)
+                    textAlign = TextAlign.Center,
+                    color = BlueJc)
             }
         }
     }
