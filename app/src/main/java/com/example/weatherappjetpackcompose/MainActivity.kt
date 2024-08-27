@@ -129,7 +129,9 @@ fun weatherCard(label: String, value: String, icon: ImageVector){
             Box(modifier = Modifier
                 .fillMaxWidth()
                 .weight(1f),
-                )
+                contentAlignment = Alignment.Center){
+
+            }
         }
     }
 }
