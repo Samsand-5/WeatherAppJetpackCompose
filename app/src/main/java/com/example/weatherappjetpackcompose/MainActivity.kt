@@ -1,5 +1,6 @@
 package com.example.weatherappjetpackcompose
 
+import android.health.connect.datatypes.units.Temperature
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -18,6 +19,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Place
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
@@ -104,7 +106,9 @@ fun WeatherScreen(){
                 Row(modifier = Modifier.fillMaxSize(),
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ) {
-                    WeatherCard(label = city, value = it.name, icon = Icons.Default.Place)
+                    WeatherCard(label = "City", value = it.name, icon = Icons.Default.Place)
+                    WeatherCard(label = "Temperature", value = "${it.main.temp}", icon = Icons.Default.Star)
+
                 }
             }
         }
