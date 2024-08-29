@@ -108,7 +108,6 @@ fun WeatherScreen(){
                 ) {
                     WeatherCard(label = "City", value = it.name, icon = Icons.Default.Place)
                     WeatherCard(label = "Temperature", value = "${it.main.temp}", icon = Icons.Default.Star)
-
                 }
             }
         }
