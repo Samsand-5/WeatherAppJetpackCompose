@@ -19,6 +19,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Place
 import androidx.compose.material.icons.filled.Star
+import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
@@ -109,8 +110,9 @@ fun WeatherScreen(){
                     WeatherCard(label = "Temperature", value = "${it.main.temp}", icon = Icons.Default.Star)
                 }
                 Row(modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceEvenly){
-
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ){
+                    WeatherCard(label = "Humidity", value = "${it.main.humidity}", icon = Icons.Default.Warning)
                 }
             }
         }
