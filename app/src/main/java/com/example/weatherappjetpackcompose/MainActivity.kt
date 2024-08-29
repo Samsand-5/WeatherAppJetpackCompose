@@ -113,6 +113,7 @@ fun WeatherScreen(){
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ){
                     WeatherCard(label = "Humidity", value = "${it.main.humidity}", icon = Icons.Default.Warning)
+                    WeatherCard(label = , value = , icon = )
                 }
             }
         }
