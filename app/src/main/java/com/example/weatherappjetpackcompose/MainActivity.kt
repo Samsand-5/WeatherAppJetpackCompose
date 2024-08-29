@@ -99,7 +99,11 @@ fun WeatherScreen(){
             }
             Spacer(modifier = Modifier.height(16.dp))
             weatherData?.let {
+                Row(modifier = Modifier.fillMaxSize(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
 
+                }
             }
         }
     }
